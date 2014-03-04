@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.phantasm.xposed.gfesecuritypatcher"
+    android:versionCode="1"
+    android:versionName="2.0">
+
+    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="15" />
+
+    <application android:label="@string/app_name"
+        android:icon="@drawable/ic_launcher"
+        android:theme="@style/AppTheme">
+        <meta-data android:name="xposedminversion" android:value="2.0*"/>xposeddescription
+        <meta-data android:name="xposedmodule" android:value="true"/>
+        <meta-data android:value="Stops good for enterprise detecting root" android:name="xposeddescription"/>
+
+    </application>
+
+</manifest>
