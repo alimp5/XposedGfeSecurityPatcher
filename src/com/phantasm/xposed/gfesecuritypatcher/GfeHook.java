@@ -43,7 +43,9 @@ public class GfeHook implements IXposedHookLoadPackage {
     		XposedBridge.log("hook1 failed");   	
     	}
 
-    	final Class<?> classSecurityPolicy2 = XposedHelpers.findClass("g.ano", lpparam.classLoader);  	   	
+    	/* this patch was intended to try and disable the lock password - but it does not work and should not be included	
+		
+		final Class<?> classSecurityPolicy2 = XposedHelpers.findClass("g.ano", lpparam.classLoader);  	   	
     	
     	if (classSecurityPolicy2!=null) {
     		XposedBridge.log("class found : g.ano");
@@ -58,6 +60,6 @@ public class GfeHook implements IXposedHookLoadPackage {
     		XposedBridge.log("hook2 successfull");
     	} else {
     		XposedBridge.log("hook2 failed");   	
-    	}
+    	}*/
     }
 }
